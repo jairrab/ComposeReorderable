@@ -22,6 +22,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.input.pointer.PointerInputChange
 import androidx.compose.ui.input.pointer.pointerInput
 
+@Suppress("DEPRECATION")
 fun Modifier.detectReorder(state: ReorderableState<*>) =
     this.then(
         Modifier.pointerInput(Unit) {
@@ -45,6 +46,7 @@ fun Modifier.detectReorder(state: ReorderableState<*>) =
     )
 
 
+@Suppress("DEPRECATION")
 fun Modifier.detectReorderAfterLongPress(state: ReorderableState<*>) =
     this.then(
         Modifier.pointerInput(Unit) {

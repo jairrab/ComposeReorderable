@@ -27,6 +27,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.input.pointer.positionChange
 import androidx.compose.ui.util.fastFirstOrNull
 
+@Suppress("DEPRECATION")
 fun Modifier.reorderable(
     state: ReorderableState<*>
 ) = then(
