@@ -1,5 +1,5 @@
 plugins {
-    id("plugins.compose-library")
+    id("plugins.android-compose-library")
 }
 
 android {
@@ -103,7 +103,7 @@ dependencies {
 //
 //            plugins {
 //                kotlin("multiplatform")
-//                // id("plugins.library")
+//                // id("plugins.android-library")
 //                id("org.jetbrains.compose")
 //            }
 //
