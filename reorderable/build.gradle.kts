@@ -10,8 +10,10 @@ android {
     namespace = "org.burnoutcrew.reorderable"
 }
 
+private val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
+
 dependencies {
-    composeUiUtil()
+    composeUiUtil(libs)
 }
 
 //    import org.jetbrains.compose.ComposeBuildConfig.composeVersion
