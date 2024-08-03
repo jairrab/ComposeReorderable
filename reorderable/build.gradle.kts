@@ -1,5 +1,7 @@
+import config.composeUiUtil
+
 plugins {
-    id("plugins.android-compose-library")
+    id("compose-library")
 }
 
 android {
@@ -105,7 +107,7 @@ dependencies {
 //
 //            plugins {
 //                kotlin("multiplatform")
-//                // id("plugins.android-library")
+//                // id("base-android-library")
 //                id("org.jetbrains.compose")
 //            }
 //
