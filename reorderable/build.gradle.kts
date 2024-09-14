@@ -1,7 +1,7 @@
 import config.composeUiUtil
 
 plugins {
-    id("compose-library")
+    id("com.bluecoins.plugins.compose-library")
 }
 
 android {
