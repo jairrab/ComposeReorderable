@@ -1,4 +1,4 @@
-import config.composeUiUtil
+import plugins.composeUiUtil
 
 plugins {
     id("com.bluecoins.plugins.compose-library")
