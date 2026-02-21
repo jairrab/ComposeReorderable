@@ -16,7 +16,7 @@ dependencies {
     implementation("io.coil-kt:coil-compose:2.2.2")
 }
 
-android {
+extensions.configure<LibraryExtension> {
 
     sourceSets {
         map { it.java.srcDir("src/${it.name}/kotlin") }

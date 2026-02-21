@@ -1,10 +1,11 @@
+import com.android.build.gradle.LibraryExtension
 import plugins.composeUiUtil
 
 plugins {
     id("com.bluecoins.plugins.compose-library")
 }
 
-android {
+extensions.configure<LibraryExtension> {
     sourceSets.all {
         kotlin.srcDir("src/commonMain/kotlin")
     }
