@@ -19,6 +19,13 @@ dependencies {
     composeUiUtil(libs)
 }
 
+// Disable test fixture compilation for lint
+if (project.hasProperty("lint") || gradle.startParameter.taskNames.any { it.contains("lint") }) {
+    tasks.matching { it.name == "compileDebugTestFixturesKotlin" }.configureEach {
+        enabled = false
+    }
+}
+
 //    import org.jetbrains.compose.ComposeBuildConfig.composeVersion
 //
 //    plugins {
