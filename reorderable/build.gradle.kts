@@ -7,7 +7,7 @@ plugins {
 
 extensions.configure<LibraryExtension> {
     sourceSets.all {
-        kotlin.srcDir("src/commonMain/kotlin")
+        kotlin.directories.add("src/commonMain/kotlin")
     }
 
     namespace = "org.burnoutcrew.reorderable"
